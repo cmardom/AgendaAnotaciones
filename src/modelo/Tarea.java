@@ -2,7 +2,6 @@ package src.modelo;
 
 import src.anotaciones.TareaAnotacion;
 
-@TareaAnotacion(tituloTarea = "Tarea de prueba", descripcion = "Descripcion de tarea")
 public class Tarea {
     private String tituloTarea;
     private String descripcion;
@@ -51,10 +50,10 @@ public class Tarea {
     @Override
     public String toString() {
         return "Tarea{" +
-                "tituloTarea='" + tituloTarea + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                ", diaSemana='" + diaSemana + '\'' +
-                ", hora=" + hora +
+                "tituloTarea='" + this.tituloTarea + '\'' +
+                ", descripcion='" + this.descripcion + '\'' +
+                ", diaSemana='" + this.diaSemana + '\'' +
+                ", hora=" + this.hora +
                 '}';
     }
 }

@@ -7,13 +7,15 @@ import java.util.ArrayList;
 
 public class main{
     public static void main(String[] args) {
-        System.out.println("hola");
-        ArrayList<Tarea>[] tareas = new ArrayList[10];
-        AgendaSemana agendaSemana = new AgendaSemana(tareas);
+        ArrayList<Tarea> tareas = new ArrayList<>();
+        AgendaSemana agendaSemana = new AgendaSemana();
 
-        for (Tarea tarea : agendaSemana.getTareas()){
-            System.out.println(tarea);
-        }
+       agendaSemana.cargadorDeContexto(agendaSemana);
+
+        System.out.println(agendaSemana);
+
+
+
 
 
 
